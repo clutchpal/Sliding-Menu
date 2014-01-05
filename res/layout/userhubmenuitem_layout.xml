@@ -6,12 +6,7 @@
     
     <TextView  android:layout_height="wrap_content"
              android:layout_width="wrap_content"
-             android:text="List bookmark"/>
-    
-    <ListView
-        android:id="@+id/userhubmenulist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:entries="@array/userhubmenulist" />
-
+             android:text="WebView"/>
+ 
+ 
 </LinearLayout>

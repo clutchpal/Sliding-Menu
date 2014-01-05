@@ -3,7 +3,7 @@ package com.dealmigo;
 import java.util.List;
 
 import com.dealmigo.R;
-import com.dealmigo.ListBookmarkFragment.Bookmark;
+import com.dealmigo.LeftPaneMenuItemListFragment.Bookmark;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">Dealmigo</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string-array name="userhubmenulist">
+        <item >Home</item>
+        <item >Companies</item>
+        <item >Deals</item>
+        <item >Settings</item>
+    </string-array>
 
 </resources>
