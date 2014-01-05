@@ -6,7 +6,8 @@ import java.util.List;
 
 import com.dealmigo.LinkAdapter;
 
-import android.R;
+
+
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -33,7 +34,7 @@ public class LeftPaneMenuItemListFragment extends Fragment {
         public void onAttach(Activity activity) {                
                 
                 // It's time we check if our activity implements the right inteface
-                if (! (activity instanceof BookmarkListener) )
+                if (! (activity instanceof UserHubMenuListener) )
                         throw new ClassCastException();
                 
                 super.onAttach(activity);
@@ -48,16 +49,16 @@ public class LeftPaneMenuItemListFragment extends Fragment {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                         Bundle savedInstanceState) {                
                 
-                View v = inflater.inflate(R.layout.leftside_layout, container, true);
-                ListView lView = (ListView) v.findViewById(R.id.bookList);
-                LinkAdapter la = new LinkAdapter(new ArrayAdapter<String>(), getActivity());
+                View v = inflater.inflate(R.layout.leftpane_layout,container, true);
+                ListView lView = (ListView) v.findViewById(R.id.userhub);
+                LinkAdapter la = new LinkAdapter(new ArrayAdapter<String>(getActivity(), R.layout.simple_list_item_1, userhubmenulist);
                 lView.setAdapter(la);
                 lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position,
                                         long id) {
-                                ( (BookmarkListener) getActivity()).onLeftPaneMenuItemClick( bookmarkList.get(position).description );
+                                ( (UserHubMenuListener) getActivity()).onLeftPaneMenuItemClick( userhubmenulist );
                         }
                 });
                 setHasOptionsMenu(true);
@@ -72,7 +73,7 @@ public class LeftPaneMenuItemListFragment extends Fragment {
                 inflater.inflate(R.menu.left_menu, menu);
         }
         
-        public interface BookmarkListener {
+        public interface UserHubMenuListener {
                 public void onLeftPaneMenuItemClick(String bookmark);
         }
 }

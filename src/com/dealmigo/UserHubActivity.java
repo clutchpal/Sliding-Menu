@@ -15,9 +15,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentTabHost;
 
-import com.dealmigo.LeftPaneMenuItemListFragment.BookmarkListener;
+import com.dealmigo.LeftPaneMenuItemListFragment.UserHubMenuListener;
 
-public class UserHubActivity extends FragmentActivity implements BookmarkListener{
+public class UserHubActivity extends FragmentActivity implements UserHubMenuListener{
         SlidingPaneLayout pane;
         @Override
         protected void onCreate(Bundle savedInstanceState) {

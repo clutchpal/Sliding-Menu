@@ -2,7 +2,7 @@ package com.dealmigo;
 
 import java.util.List;
 
-import com.dealmigo.R;
+
 import com.dealmigo.LeftPaneMenuItemListFragment.Bookmark;
 
 import android.content.Context;
@@ -51,13 +51,7 @@ public class LinkAdapter extends ArrayAdapter<Bookmark> {
                 if ( v == null) {
                         LayoutInflater inf = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                         v = (View) inf.inflate(R.layout.bookmark_layout, null);
-                        TextView tName = (TextView) v.findViewById(R.id.bkmName);
-                        TextView tlink = (TextView) v.findViewById(R.id.bkmLink);
-                        ImageView tImage = (ImageView) v.findViewById(R.id.bkmImage);
-                        
-                        tName.setText(bookList.get(position).name);
-                        tlink.setText(bookList.get(position).description);
-                       
+                 
                        
                 }
                 

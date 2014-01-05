@@ -23,7 +23,7 @@ public class ViewLeftPaneMenuItemFragment extends Fragment {
                         Bundle savedInstanceState) {
         	// TODO Create Selected Menu Item UI in Right Pane
                 
-                View v = inflater.inflate(R.layout.userhubselectedmenuitem_layout, container, false);
+                View v = inflater.inflate(R.layout.userhubmenuitem_layout, container, false);
                 setHasOptionsMenu(true);
                 return v;
         }
